@@ -15,4 +15,18 @@ const calcular = (a, b)=> {
     let mult = a*b
     let div = a/b
 
+    multiplicarTotales(suma, rest, mult, div) // Llamada a la funcion multiplicar
+
+}
+
+// Recibe multiples parametros y retorna la multiplicacion de todos ellos
+const multiplicarTotales = (...resultados)=> {
+
+    let total = 1
+    resultados.forEach((resultado)=> {
+        total *= resultado
+    })
+
+    console.log(total);
+
 }
