@@ -14,6 +14,9 @@ const calcular = (a, b)=> {
     let rest = a-b
     let mult = a*b
     let div = a/b
-
+    sumar(suma, rest,mult,div);
 }
-
+function sumar(a,b,c,d){
+    let total=a+b+c+d;
+    console.log(total);
+}
